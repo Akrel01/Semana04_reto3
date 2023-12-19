@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Raleway:wght@200;400;500;700&display=swap');
+
+:root{
+    --color-border:rgb(252, 66, 66);
+    --color-texHero:rgb(226, 211, 0);
+    --color-check:green;
+    --color-button:rgb(0, 165, 0);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    font-family: "Raleway";
+}
+
+.logo{
+    height: 46px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font: inherit;
+    font-weight: 700;
+}
+
+.container_navbar{
+    display: flex;
+    gap: 5.5rem;
+    align-items: center;
+    list-style: none;
+}
+
+.contact{
+    padding: 0.5rem 2.5rem;
+    border:solid  2px;
+    border-color: var(--color-border);
+}
+
+
+.principal_hero{
+    width: 100vw;
+    height: 50rem;
+    background-image: url(./assets/buffet-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.text_hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--color-texHero);
+    text-shadow: 5px 5px black;
+    backdrop-filter: brightness(50%);
+    font-size: 4.5rem;
+    padding: 0 15rem;
+    text-align: center;
+}
+
+h2{
+    padding: 5rem 2rem 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.line{
+    position: relative;
+    height: 10px;
+    width: 100px;
+    margin: 0 auto;
+    border-top:  3.5px solid;
+    border-color: var(--color-border);
+}
+
+.container_aboutus{
+    display: flex;
+    padding: 2rem 3rem;
+}
+
+.text_aboutus{
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.secundari_hero{
+    background-image: url(./assets/food-table.jpg);
+    height: 32rem;
+    background-repeat: no-repeat;
+}
+
+.textS_hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    height: 100%;
+    font-size: 2rem;
+    padding: 0 24rem;
+}
+
+.img_card{
+    width: 25rem;
+}
+
+.container_cardsService{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card_service{
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px  black;
+}
+
+.text_card{
+    padding: 1.5rem;
+    text-transform: capitalize;
+}
+
+.card_service:hover{
+    background-color: rgb(255, 110, 110);
+}
+
+.text_paquetes{
+    padding: 1.5rem 0;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.container_paquetes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 2rem 4rem;
+}
+
+.card_paquetes{
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(129, 129, 129);
+    height: 554px;
+    width: 22rem;
+    
+}
+
+.card_paquetes > h3, p, li{
+    padding: 1.1rem 0;
+}
+
+.card_paquetes > p{
+    background-color: rgb(230, 230, 230);
+    font-weight:700;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    font-weight: 600;
+}
+
+.list > li{
+    
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+i{
+    position: relative;
+    top: 2px;
+    color: rgb(1, 165, 1);
+    
+    padding-right: 5px;
+    font-weight: inherit;
+}
+
+
+.container_contact > p{
+    text-align: center;
+    font-weight: 700;
+    line-height: 6px;
+}
+
+.first-child{
+    padding-top: 3rem;
+}
+
+.container_form{
+    height: 22rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.container_form input {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.container_form p {
+    font-weight: 700;
+}
+
+.container_form-input{
+    width: 100%;
+    padding:0 2rem ;
+    height: 5rem;
+}
+
+.container_form div:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: 90%;
+}
+
+.container_form-input textarea{
+    width: 100%;
+    border: 1px solid  rgb(180, 180, 180);
+}
+
+button{
+    margin: 2rem 5rem;
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: var(--color-button);
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+

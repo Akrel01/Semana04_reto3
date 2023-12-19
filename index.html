@@ -3,138 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Reto03</title>
 </head>
 <body>
     <header>
     <nav>
-    <img src="./assets/logo.png" alt="">    
-        <ul>
+    <img class="logo" src="./assets/logo.png">    
+        <ul class="container_navbar">
             <li><a href="">HOME</a></li>
             <li><a href="">ACERCA DE</a></li>
             <li><a href="">SERVICIOS</a></li>
             <li><a href="">PAQUETES PERSONALIZADOS</a></li>
-            <li><a href="">CONTACTO</a></li>
         </ul> 
+        <p class="contact"><a href="">CONTACTO</a></p>
     </nav>   
     </header>
-    <img src="./assets/buffet-1.jpg" width="600px">
-    <h1>SERVICIOS DE CATERING PARA TODA OCASIÓN</h1>
+    <div class=" principal_hero">
+        <h1 class="text_hero">SERVICIOS DE CATERING PARA TODA OCASIÓN</h1>
+    </div>
     <main>
         <section>
-            <article>
+            <article class="aboutus">
                 <h2>QUIÉNES SOMOS</h2>
-                <div>
-                    <img src="./assets/buffet-section.jpg" width="300px">
-                    <p>Lorem ipsum dolor sit amet consectetur 
+                <div class="line"></div>
+                <div class="container_aboutus">
+                    <img class="image" src="./assets/buffet-section.jpg">
+                    <div class="text_aboutus">
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Ab ducimus necessitatibus
+                            saepe, sunt dignissimos, odio eveniet 
+                            recusandae quidem blanditiis porro in 
+                            laborum! Deserunt, praesentium numquam 
+                            animi voluptates nisi sequi perspiciatis!<br>
+                        </p> <br>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. Ab ducimus necessitatibus
                         saepe, sunt dignissimos, odio eveniet 
                         recusandae quidem blanditiis porro in 
                         laborum! Deserunt, praesentium numquam 
-                         animi voluptates nisi sequi perspiciatis!
-                    </p>
+                        animi voluptates nisi sequi perspiciatis! 
+                        </p> <br>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Dolores, minus temporibus cum qui ad blanditiis totam
+                            reprehenderit quia pariatur asperiores. Ipsum, quos
+                            voluptatibus. Quo quos tenetur accusamus aliquam deleniti 
+                            exercitationem!   
+                        </p>   
+                    </div>
                 </div>
             </article>
         </section>
-        <section>
-            <img src="./assets/food-table.jpg" width="500px">
-            <p>Proveemos soluciones premium de catering para eventos
+        <section class="secundari_hero">
+            <p class="textS_hero">Proveemos soluciones premium de catering para eventos
                 formales o casuales
             </p>
         </section>
         <section>
             <h2>NUESTROS SERVICIOS</h2>
-            <article>
-                <div>
+            <div class="line"></div>
+            <article class="container_cardsService">
+                <div class="card_service">
                     <a href="#">
-                        <img src="./assets/wedding.jpg" width="200px">
-                        <p>bodas</p>
+                        <img class="img_card" src="./assets/wedding.jpg">
+                        <p class="text_card">bodas</p>
                     </a>
                 </div>
-                <div>
+                <div class="card_service">
                     <a href="#">
-                        <img src="./assets/woman-flowers-holidays-girl.jpg" width="200px">
-                        <p>Eventos corporativos</p>
+                        <img  class="img_card" src="./assets/woman-flowers-holidays-girl.jpg">
+                        <p class="text_card">Eventos corporativos</p>
                     </a>
                 </div>
-                <div>
+                <div class="card_service">
                     <a href="#">
-                        <img src="./assets/hands-summer-party-colorful.jpg" width="200px">
-                        <p>Reuniones familiares</p>
+                        <img class="img_card" src="./assets/hands-summer-party-colorful.jpg">
+                        <p class="text_card">Reuniones familiares</p>
                     </a>
                 </div>
             </article>
         </section>
         <section>
             <h2>PAQUETES DE CATERING</h2>
-            <p>Contamos con paquetes personalizados a la medida
+            <div class="line"></div>
+            <p class="text_paquetes">Contamos con paquetes personalizados a la medida
                 de tus necesidades
             </p>
-            <article>
-                <h3>Silver</h3>
-                <p>$15.99 / persona</p>
-                <ul>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Gold</h3>
-                <p>$19.99 / persona</p>
-                <ul>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Platinum</h3>
-                <p>$29.99 / persona</p>
-                <ul>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                    <li>Lorem consectetur aperiam</li>
-                </ul>
-            </article>
+                <div class="container_paquetes">
+                    <article class="card_paquetes">
+                        <h3>Silver</h3>
+                        <p>$15.99 / persona</p>
+                        <ul class="list">
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li>-</li>
+                            <li>-</li>
+                            <li>-</li>
+                            <li>-</li>
+                        </ul>
+                    </article>
+                    <article class="card_paquetes">
+                        <h3>Gold</h3>
+                        <p>$19.99 / persona</p>
+                        <ul class="list">
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li>-</li>
+                            <li>-</li>
+                        </ul>
+                    </article>
+                    <article class="card_paquetes">
+                        <h3>Platinum</h3>
+                        <p>$29.99 / persona</p>
+                        <ul class="list">
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                            <li><i class='bx bx-check'></i>Lorem consectetur aperiam</li>
+                        </ul>
+                    </article>
+                </div>
         </section>
     </main>
     <footer>
         <section>
-            <article>
+            <article class="container_contact">
                 <h2>CONTACTO</h2>
-                <p>Dirección:Broadway & Morris St, New York, NY 10006</p>
+                <div class="line"></div>
+                <p class="first-child">Dirección:Broadway & Morris St, New York, NY 10006</p>
                 <p>Teléfono: 1-234-567-8910</p>
                 <p>Email:info@email.com</p>
             </article>
-            <article>
-                <div>
+            <article class="container_form">
+                <div class="container_form-input">
                     <p>Nombre:</p>
                     <input type="text" required>
                 </div>
-                <div>
+                <div class="container_form-input">
                     <p>Teléfono:</p>
-                    <input type="number" required>
+                    <input type="tel" required>
                 </div>
-                <div>
+                <div class="container_form-input">
                     <p>Email:</p>
                     <input type="email" required>
                 </div>
-                <div>
+                <div class="container_form-input">
                     <p>Escribe un comentario</p>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
-                <button>Enviar</button>
             </article>
+            <button>Enviar</button>
         </section>
         <section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.550808793259!2d-74.01586612416415!3d40.705889537990025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1145b1ab8b%3A0xaedc8d7989eecbc0!2sBroadway%20%26%20Morris%20St%2C%20New%20York%2C%20NY%2010006%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1691517659235!5m2!1ses-419!2spe" width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
